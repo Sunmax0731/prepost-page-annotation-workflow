@@ -191,7 +191,7 @@
           "description": "docs ZIPが生成済みである",
           "kind": "zip",
           "pass": true,
-          "detail": "prepost-page-annotation-workflow-docs.zip 10075 bytes"
+          "detail": "prepost-page-annotation-workflow-docs.zip exists and exceeds minimum size"
         }
       ]
     },
