@@ -1,27 +1,27 @@
 {
   "items": [
     {
-      "id": "prepost-1",
+      "id": "prepost-page-annotation-workflow-1",
       "title": "投稿前チェック・ページ注釈ワークフロー サンプル 1",
+      "status": "ready",
       "url": "https://example.com/post",
       "checklist": [
         "タイトル確認",
         "画像確認",
         "リンク確認"
       ],
-      "annotation": "ファーストビューの表記を確認",
-      "status": "ready"
+      "annotation": "ファーストビューの表記を確認"
     },
     {
-      "id": "prepost-missing-required",
+      "id": "prepost-page-annotation-workflow-missing-required",
       "title": "必須項目不足サンプル",
+      "status": "ready",
       "checklist": [
         "タイトル確認",
         "画像確認",
         "リンク確認"
       ],
-      "annotation": "ファーストビューの表記を確認",
-      "status": "ready"
+      "annotation": "ファーストビューの表記を確認"
     }
   ]
 }

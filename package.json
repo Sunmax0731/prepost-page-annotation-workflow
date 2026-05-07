@@ -5,7 +5,7 @@
   "type": "module",
   "description": "投稿前チェックリストとページ注釈をブラウザ上で扱い、URLごとに確認状態を残す。",
   "scripts": {
-    "test": "node --test tests/*.test.mjs",
+    "test": "node --test tests/*.test.mjs && node tools/qcds-evaluate.mjs",
     "validate": "npm test"
   },
   "keywords": [
