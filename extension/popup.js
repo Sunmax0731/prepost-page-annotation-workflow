@@ -4,7 +4,7 @@ const sample = {
   "items": [
     {
       "id": "prepost-page-annotation-workflow-1",
-      "title": "投稿前チェック・ページ注釈ワークフロー サンプル 1",
+      "title": "投稿前後ページ注釈ワークフロー サンプル1",
       "status": "ready",
       "url": "https://example.com/post",
       "checklist": [
@@ -12,7 +12,7 @@ const sample = {
         "画像確認",
         "リンク確認"
       ],
-      "annotation": "ファーストビューの表記を確認"
+      "annotation": "公開前レビューで確認した注釈"
     },
     {
       "id": "prepost-page-annotation-workflow-missing-required",
@@ -23,7 +23,7 @@ const sample = {
         "画像確認",
         "リンク確認"
       ],
-      "annotation": "ファーストビューの表記を確認"
+      "annotation": "公開前レビューで確認した注釈"
     }
   ]
 };
@@ -50,7 +50,7 @@ document.getElementById('analyze').addEventListener('click', async () => {
     result.textContent = renderMarkdownReport(report);
     await chrome.storage.local.set({ lastReport: report });
     const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
-    if (tab?.id) await chrome.tabs.sendMessage(tab.id, { type: 'TOP19_REPORT', report }).catch(() => undefined);
+    if (tab?.id) await chrome.tabs.sendMessage(tab.id, { type: 'TOP19_REPORT', title: '投稿前後ページ注釈ワークフロー', report }).catch(() => undefined);
   } catch (error) {
     badge.textContent = '入力エラー';
     result.textContent = String(error?.message || error);

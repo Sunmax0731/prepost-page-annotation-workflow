@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { analyzeItems, buildReviewModel, renderHtmlReport } from '../extension/src/core.mjs';
 
-test('popup review model exposes cards and next actions', () => {
+test('review model exposes status cards and next actions', () => {
   const report = analyzeItems({ items: [{
   "id": "prepost-page-annotation-workflow-missing-required",
   "title": "必須項目不足サンプル",
@@ -12,10 +12,11 @@ test('popup review model exposes cards and next actions', () => {
     "画像確認",
     "リンク確認"
   ],
-  "annotation": "ファーストビューの表記を確認"
+  "annotation": "公開前レビューで確認した注釈"
 }] });
   const model = buildReviewModel(report);
-  assert.equal(model.statusLabel, '要修正');
+  assert.equal(model.statusLabel, '修正が必要');
+  assert.ok(model.completionRate < 100);
   assert.ok(model.cards.length >= 4);
   assert.match(renderHtmlReport(report), /Next Actions/);
 });

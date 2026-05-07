@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": false,
   "type": "module",
-  "description": "投稿前チェックリストとページ注釈をブラウザ上で扱い、URLごとに確認状態を残す。",
+  "description": "投稿前チェックと公開後確認をURLごとに記録し、ページ上で注釈として残す。",
   "scripts": {
     "test": "node --test tests/*.test.mjs && node tools/qcds-evaluate.mjs",
     "validate": "npm test"
@@ -11,7 +11,10 @@
   "keywords": [
     "chrome-extension",
     "prepost",
-    "manifest-v3"
+    "manifest-v3",
+    "chromeextension",
+    "qcds",
+    "pre-release"
   ],
   "license": "MIT"
 }
