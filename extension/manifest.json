@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "投稿前チェック・ページ注釈ワークフロー",
+  "version": "0.1.0",
+  "description": "投稿前チェックリストとページ注釈をブラウザ上で扱い、URLごとに確認状態を残す。",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
