@@ -1,0 +1,32 @@
+{
+  "product": "prepost-page-annotation-workflow",
+  "repository": "Sunmax0731/prepost-page-annotation-workflow",
+  "githubUrl": "https://github.com/Sunmax0731/prepost-page-annotation-workflow",
+  "tag": "v0.1.0-alpha.1",
+  "releaseUrl": "https://github.com/Sunmax0731/prepost-page-annotation-workflow/releases/tag/v0.1.0-alpha.1",
+  "prerelease": true,
+  "latest": false,
+  "assetCount": 3,
+  "assets": [
+    "prepost-page-annotation-workflow-docs.zip",
+    "manual-test.md",
+    "strict-manual-test-addendum.md"
+  ],
+  "platformRuntimeGate": "dist/platform-runtime-gate-result.json",
+  "platformType": "chrome-extension",
+  "manualTest": "not-run-by-codex",
+  "qcdsEvaluation": {
+    "Quality": "S-",
+    "Cost": "S-",
+    "Delivery": "S-",
+    "Satisfaction": "S-",
+    "capReason": "manual-test-not-run-by-codex"
+  },
+  "github": {
+    "repo": "Sunmax0731/prepost-page-annotation-workflow",
+    "url": "https://github.com/Sunmax0731/prepost-page-annotation-workflow",
+    "releaseUrl": "https://github.com/Sunmax0731/prepost-page-annotation-workflow/releases/tag/v0.1.0-alpha.1",
+    "prerelease": true,
+    "latest": false
+  }
+}
