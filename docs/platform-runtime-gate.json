@@ -1,0 +1,11 @@
+{
+  "product": "prepost-page-annotation-workflow",
+  "title": "投稿前チェック・ページ注釈ワークフロー",
+  "domain": "ChromeExtension",
+  "ideaNo": 4,
+  "platformType": "chrome-extension",
+  "expectedPublicTarget": "Chrome Web Store",
+  "browser": null,
+  "android": null,
+  "evidence": "dist/platform-runtime-gate-result.json"
+}
